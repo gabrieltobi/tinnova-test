@@ -1,0 +1,40 @@
+.box {
+  height: 100%;
+  display: flex;
+}
+
+.list {
+  padding: 0;
+  width: 100%;
+  overflow: auto;
+  max-height: 100vh;
+
+  a:not(:last-child) {
+    .item {
+      border-bottom: 1px solid #333;
+    }
+  }
+}
+
+.item {
+  list-style: none;
+  padding: 12px 24px;
+
+  &:hover {
+    background-color: transparentize(#00c8b3, 0.7);
+  }
+}
+
+.title,
+.subtitle {
+  margin: 0;
+}
+
+.title {
+  color: #00c8b3;
+}
+
+.subtitle {
+  font-weight: normal;
+  color: #333;
+}
